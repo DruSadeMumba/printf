@@ -14,7 +14,7 @@ int print_HEXA(va_list args, flags_f *f)
 	int count = 0;
 
 	if (f->hash == 1 && s[0] != '0')
-		count += ("0X");
+		count += _puts("0X");
 	count += _puts(s);
 	return (count);
 }

@@ -7,11 +7,11 @@
  * @f: pointer
  * Return: int
  */
-int print_string(va_list args, flag_f *f)
+int print_string(va_list args, flags_f *f)
 {
 	char *s = va_arg(args, char *);
 
-	void(f);
+	(void)f;
 
 	if (!s)
 		s = "(nil)";

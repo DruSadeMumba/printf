@@ -15,7 +15,7 @@ int get_flag(char c, flags_f *f)
 	{
 		case '+':
 			f->plus = 1;
-			i = 1
+			i = 1;
 			break;
 		case ' ':
 			f->space = 1;

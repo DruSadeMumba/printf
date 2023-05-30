@@ -17,7 +17,7 @@ int print_address(va_list args, flags_f *f)
 	(void)f;
 
 	if (!l)
-		return (print_string("(nil)"));
+		return (_puts("(nil)"));
 	s = convert(l, 16, 1);
 	count += _puts("0x");
 	count += _puts(s);

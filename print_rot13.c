@@ -12,7 +12,7 @@ int print_rot13(va_list args, flags_f *f)
 	int i, j, n = 0;
 	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-	char *s = var_arg(args, char *);
+	char *s = va_arg(args, char *);
 
 	(void)f;
 	for (i = 0; s[i]; i++)
