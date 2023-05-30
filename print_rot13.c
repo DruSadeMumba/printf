@@ -9,22 +9,26 @@
  */
 int print_rot13(va_list args, flags_f *f)
 {
-	int i, j, n = 0;
+	int i, j;
 	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	char *s = va_arg(args, char *);
 
 	(void)f;
-	for (i = 0; s[i]; i++)
+	if (!s)
+		s = "(nil)";
+	for (j = 0; s[j]; j++)
 	{
-		for (j = 0; j <= 51; j++)
+		if (s[j] < 'A' || (s[j] > 'Z' && s[j] < 'a') || s[j] > 'z')
+			_putchar(s[j]);
+		else
 		{
-			if (a[j] == s[i])
+			for (i = 0; i <= 52; i++)
 			{
-				n += _putchar(b[j]);
-				break;
+				if (s[j] == a[i])
+					_putchar(b[i]);
 			}
 		}
 	}
-	return (n);
+	return (j);
 }
