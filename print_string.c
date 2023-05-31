@@ -14,6 +14,6 @@ int print_string(va_list args, flags_f *f)
 	(void)f;
 
 	if (!s)
-		s = "(nil)";
+		s = "(null)";
 	return (_puts(s));
 }
