@@ -11,5 +11,5 @@ int print_perc(va_list args, flags_f *f)
 {
 	(void)args;
 	(void)f;
-	return (_puts("%%"));
+	return (_putchar('%'));
 }
