@@ -1,10 +1,10 @@
 # PRINTF
 
 ### Features
-	•	Supports basic format specifiers (%c, %s, %d, %i, %f, etc.)
-	•	Handles variable arguments using stdarg.h.
-	•	Efficiently formats and outputs data to the console.
-	•	Extendable for additional specifiers or custom formatting rules.
+- Supports basic format specifiers (%c, %s, %d, %i, %f, etc.)
+- Handles variable arguments using stdarg.h.
+- Efficiently formats and outputs data to the console.
+- Extendable for additional specifiers or custom formatting rules.
 
 ### Use Case
 
